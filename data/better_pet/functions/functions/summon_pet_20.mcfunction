@@ -1,0 +1,1 @@
+execute if data entity @s {SelectedItem:{tag:{pet_type:"camel"}}} run summon camel 8 -63 8 {Tags:["marker"]}

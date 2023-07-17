@@ -1,0 +1,1 @@
+execute if entity @s[type=minecraft:camel] run data modify block 8 -64 8 Items.[0].tag.pet_type set value "camel"
