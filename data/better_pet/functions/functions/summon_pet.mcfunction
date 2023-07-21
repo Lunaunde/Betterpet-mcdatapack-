@@ -11,7 +11,7 @@ execute if data entity @s {SelectedItem:{tag:{pet_type:"cat"}}} run summon wolf 
 execute if data entity @s {SelectedItem:{tag:{pet_type:"fox"}}} run summon wolf 8 -63 8 {Tags:["marker"]}
 function better_pet:functions/summon_pet_20
 item replace block 8 -64 8 container.1 from entity @s weapon
-execute as @e[tag=marker] run function better_pet:functions/summon_pet_20
+execute as @e[tag=marker] run function better_pet:functions/summon_pet2
 data modify block 8 -64 8 Items.[1].tag.instrument set value "minecraft:ponder_goat_horn"
 data remove block 8 -64 8 Items.[1].tag.Enchantments 
 data modify block 8 -64 8 Items.[1].tag.display.Lore set value ['{"text":"站立吹号角将宠物传送至身边","color":"green","italic":false}','{"text":"在宠物身边下蹲吹号角可将宠物收起","color":"green","italic":false}']
